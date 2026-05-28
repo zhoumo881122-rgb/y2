@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube Video Downloader - Download YouTube Videos to MP4 & MP3 | VagaTools</title>
+    <meta name="description" content="Free YouTube video downloader for preparing YouTube to MP4 and YouTube to MP3 conversions. Paste a YouTube link and use VagaTools on mobile or desktop.">
+    <meta name="keywords" content="youtube video downloader, download youtube videos, youtube to mp4, youtube to mp3, youtube downloader online, free video downloader, 在线 YouTube 视频下载, YouTube 下载视频">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="canonical" href="https://example.com/">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943771829287979"
+      crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "VagaTools YouTube Video Downloader",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "url": "https://example.com/",
+        "description": "A simple online YouTube video downloader interface for preparing YouTube to MP4 and YouTube to MP3 conversions for personal and permitted use.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this YouTube video downloader free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. VagaTools is designed as a free online YouTube video downloader and converter interface."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this tool on mobile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The interface is responsive and works in modern mobile and desktop browsers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download any YouTube video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use YouTube links only for content you own, created yourself, or have permission to download."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to download a YouTube video",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Copy the video link",
+            "text": "Copy a YouTube video URL that you own or are allowed to download."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Paste the link",
+            "text": "Paste the URL into the converter box on VagaTools."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Choose a format",
+            "text": "Select a video or audio format before continuing."
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="VagaTools home">
+        <span class="brand-mark">V</span>
+        <span>VagaTools</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation" data-i18n-aria="primaryNav">
+        <a href="#formats" data-i18n="navFormats">Formats</a>
+        <a href="#keywords" data-i18n="navKeywords">Keywords</a>
+        <a href="#how-it-works" data-i18n="navHow">How it works</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+      </nav>
+      <label class="language-picker">
+        <span data-i18n="languageLabel">Language</span>
+        <select id="languageSelect" aria-label="Language">
+          <option value="auto">Auto</option>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+          <option value="ru">Русский</option>
+          <option value="ar">العربية</option>
+          <option value="hi">हिन्दी</option>
+          <option value="id">Indonesia</option>
+          <option value="tr">Türkçe</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <section class="tool-section" aria-labelledby="main-title">
+        <div class="tool-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Free YouTube video downloader</p>
+          <h1 id="main-title" data-i18n="heroTitle">YouTube Video Downloader</h1>
+          <p class="intro" data-i18n="heroIntro">Paste a YouTube link to prepare YouTube to MP4 or YouTube to MP3 conversions in a clean, fast, mobile-friendly tool.</p>
+        </div>
+
+        <form class="converter" id="converterForm">
+          <label for="videoUrl" data-i18n="urlLabel">Video URL</label>
+          <div class="url-row">
+            <input id="videoUrl" name="videoUrl" type="url" inputmode="url" placeholder="Paste your YouTube video link here" autocomplete="url" required data-i18n-placeholder="urlPlaceholder">
+            <button type="submit" data-i18n="startButton">Start</button>
+          </div>
+          <div class="format-row" aria-label="Choose output format" data-i18n-aria="formatAria">
+            <label class="choice">
+              <input type="radio" name="format" value="MP4" checked>
+              <span data-i18n="mp4">MP4 Video</span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="format" value="MP3">
+              <span data-i18n="mp3">MP3 Audio</span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="format" value="WEBM">
+              <span>WEBM</span>
+            </label>
+          </div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="ad-slot" aria-label="Advertisement" data-i18n-aria="adAria">
+          <span data-i18n="adLabel">Advertisement</span>
+          <!-- Add your AdSense ad unit <ins class="adsbygoogle"> code here after creating an ad slot. -->
+        </div>
+      </section>
+
+      <section class="content-band" id="keywords" aria-labelledby="keywords-title">
+        <div class="section-inner">
+          <h2 id="keywords-title" data-i18n="keywordsTitle">Popular YouTube Downloader Searches</h2>
+          <p class="section-lead" data-i18n="keywordsIntro">VagaTools is optimized around common search intent for YouTube video downloads, online YouTube converters, and YouTube to MP4 or MP3 workflows.</p>
+          <div class="keyword-grid" aria-label="YouTube downloader keywords" data-i18n-aria="keywordsAria">
+            <span data-i18n="keyword1">YouTube video downloader</span>
+            <span data-i18n="keyword2">download YouTube videos</span>
+            <span data-i18n="keyword3">YouTube to MP4</span>
+            <span data-i18n="keyword4">YouTube to MP3</span>
+            <span data-i18n="keyword5">YouTube downloader online</span>
+            <span data-i18n="keyword6">free YouTube converter</span>
+            <span data-i18n="keyword7">save YouTube video</span>
+            <span data-i18n="keyword8">YouTube Shorts download</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band" id="formats" aria-labelledby="formats-title">
+        <div class="section-inner">
+          <h2 id="formats-title" data-i18n="formatsTitle">Supported Output Formats</h2>
+          <div class="format-grid">
+            <article>
+              <h3 data-i18n="mp4CardTitle">MP4 video</h3>
+              <p data-i18n="mp4CardText">Useful for YouTube to MP4 playback on phones, computers, and tablets.</p>
+            </article>
+            <article>
+              <h3 data-i18n="mp3CardTitle">MP3 audio</h3>
+              <p data-i18n="mp3CardText">Prepare YouTube to MP3 audio-only files for personal listening and permitted reuse.</p>
+            </article>
+            <article>
+              <h3>WEBM</h3>
+              <p data-i18n="webmCardText">A web-friendly format for modern browsers and lightweight sharing.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band muted" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-inner split">
+          <div>
+            <h2 id="how-title" data-i18n="howTitle">How It Works</h2>
+            <p data-i18n="howIntro">VagaTools keeps the YouTube downloader workflow direct: paste a link, choose MP4 or MP3, and continue with your conversion flow.</p>
+          </div>
+          <ol class="steps">
+            <li data-i18n="step1">Copy the YouTube URL of content you own or have permission to download.</li>
+            <li data-i18n="step2">Paste the YouTube link into the input box above.</li>
+            <li data-i18n="step3">Select MP4, MP3, or WEBM and start the conversion.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="content-band" id="faq" aria-labelledby="faq-title">
+        <div class="section-inner">
+          <h2 id="faq-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details>
+              <summary data-i18n="faq1Q">Is this YouTube video downloader free?</summary>
+              <p data-i18n="faq1A">Yes. This page is built for a free web-based YouTube downloader and converter experience.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq2Q">Does it work on mobile?</summary>
+              <p data-i18n="faq2A">Yes. The layout is responsive and designed for modern mobile and desktop browsers.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq3Q">Can I download any YouTube video?</summary>
+              <p data-i18n="faq3A">Only download YouTube videos you own, created, or have permission to save. Respect the rights of creators and each platform's terms.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span data-i18n="copyright">Copyright</span> <span id="year"></span> VagaTools. <span data-i18n="footerNote">Use this tool only for content you are allowed to download.</span></p>
+      <nav aria-label="Footer navigation" data-i18n-aria="footerNav">
+        <a href="#main-title" data-i18n="footerHome">Home</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="mailto:contact@example.com" data-i18n="footerContact">Contact</a>
+      </nav>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
