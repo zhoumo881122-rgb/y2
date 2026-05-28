@@ -1,0 +1,203 @@
+{
+  "siteUrl": "https://your-domain.example",
+  "siteName": "VagaTools",
+  "defaultLanguage": "en",
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "title": "YouTube Video Downloader - Download YouTube Videos to MP4 & MP3",
+      "description": "Free YouTube video downloader for YouTube to MP4 and YouTube to MP3. Paste a YouTube link and prepare a download link on mobile or desktop.",
+      "keywords": ["youtube video downloader", "download youtube videos", "youtube to mp4", "youtube to mp3", "youtube downloader online", "free youtube converter"],
+      "h1": "YouTube Video Downloader",
+      "intro": "Paste a YouTube link, choose MP4 or MP3, and prepare a download link with a simple online tool.",
+      "faq": [
+        ["Is this YouTube downloader free?", "Yes. VagaTools is built as a free online YouTube downloader and converter interface."],
+        ["Can I use it on mobile?", "Yes. The page is responsive and works in modern mobile and desktop browsers."],
+        ["Can I download any YouTube video?", "Only use it for videos you own, created, or have permission to download."]
+      ]
+    },
+    {
+      "code": "zh",
+      "name": "中文",
+      "title": "YouTube 视频下载器 - YouTube 下载视频 MP4/MP3 在线工具",
+      "description": "免费 YouTube 视频下载器，支持 YouTube to MP4、YouTube to MP3 相关流程。粘贴 YouTube 链接即可在手机或电脑上使用。",
+      "keywords": ["YouTube 视频下载器", "YouTube 下载视频", "YouTube to MP4", "YouTube to MP3", "YouTube 在线下载", "免费 YouTube 转换器"],
+      "h1": "YouTube 视频下载器",
+      "intro": "粘贴 YouTube 链接，选择 MP4 或 MP3，快速准备下载链接。",
+      "faq": [
+        ["这个 YouTube 下载器免费吗？", "是的。VagaTools 面向免费的 YouTube 网页下载和转换体验。"],
+        ["手机可以使用吗？", "可以。页面适配手机和桌面浏览器。"],
+        ["可以下载任何 YouTube 视频吗？", "请只用于你拥有、自己创建或获得授权下载的视频。"]
+      ]
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "title": "Descargador de Videos de YouTube - YouTube a MP4 y MP3",
+      "description": "Descargador de videos de YouTube gratis para preparar enlaces YouTube a MP4 y YouTube a MP3 en móvil o escritorio.",
+      "keywords": ["descargador de youtube", "descargar videos de youtube", "youtube a mp4", "youtube a mp3", "convertidor youtube gratis"],
+      "h1": "Descargador de Videos de YouTube",
+      "intro": "Pega un enlace de YouTube, elige MP4 o MP3 y prepara un enlace de descarga.",
+      "faq": [
+        ["¿Es gratis?", "Sí. VagaTools ofrece una interfaz gratuita para descargas y conversiones permitidas."],
+        ["¿Funciona en móvil?", "Sí. La página es responsive."],
+        ["¿Puedo descargar cualquier video?", "Úsalo solo con videos propios o con permiso de descarga."]
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "title": "Téléchargeur YouTube - YouTube en MP4 et MP3",
+      "description": "Téléchargeur YouTube gratuit pour préparer des liens YouTube en MP4 et YouTube en MP3 sur mobile ou ordinateur.",
+      "keywords": ["telechargeur youtube", "telecharger video youtube", "youtube en mp4", "youtube en mp3", "convertisseur youtube gratuit"],
+      "h1": "Téléchargeur YouTube",
+      "intro": "Collez un lien YouTube, choisissez MP4 ou MP3 et préparez un lien de téléchargement.",
+      "faq": [
+        ["Est-ce gratuit ?", "Oui. VagaTools propose une interface gratuite pour les usages autorisés."],
+        ["Puis-je l'utiliser sur mobile ?", "Oui. La page est responsive."],
+        ["Puis-je télécharger n'importe quelle vidéo ?", "Utilisez-le uniquement pour les vidéos que vous possédez ou êtes autorisé à télécharger."]
+      ]
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "title": "YouTube Downloader - YouTube zu MP4 und MP3",
+      "description": "Kostenloser YouTube Downloader für YouTube zu MP4 und YouTube zu MP3 auf Handy oder Desktop.",
+      "keywords": ["youtube downloader", "youtube video herunterladen", "youtube zu mp4", "youtube zu mp3", "kostenloser youtube converter"],
+      "h1": "YouTube Downloader",
+      "intro": "Füge einen YouTube-Link ein, wähle MP4 oder MP3 und bereite einen Download-Link vor.",
+      "faq": [
+        ["Ist der Downloader kostenlos?", "Ja. VagaTools bietet eine kostenlose Oberfläche für erlaubte Downloads."],
+        ["Funktioniert es mobil?", "Ja. Die Seite ist responsiv."],
+        ["Kann ich jedes Video herunterladen?", "Nutze es nur für Videos, die dir gehören oder für die du eine Erlaubnis hast."]
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "title": "Baixador do YouTube - YouTube para MP4 e MP3",
+      "description": "Baixador do YouTube grátis para preparar links YouTube para MP4 e YouTube para MP3 no celular ou computador.",
+      "keywords": ["baixador youtube", "baixar videos do youtube", "youtube para mp4", "youtube para mp3", "conversor youtube gratis"],
+      "h1": "Baixador do YouTube",
+      "intro": "Cole um link do YouTube, escolha MP4 ou MP3 e prepare um link de download.",
+      "faq": [
+        ["É grátis?", "Sim. VagaTools oferece uma interface gratuita para usos permitidos."],
+        ["Funciona no celular?", "Sim. A página é responsiva."],
+        ["Posso baixar qualquer vídeo?", "Use apenas com vídeos próprios ou com permissão para baixar."]
+      ]
+    },
+    {
+      "code": "id",
+      "name": "Indonesia",
+      "title": "Pengunduh YouTube - YouTube ke MP4 dan MP3",
+      "description": "Pengunduh YouTube gratis untuk menyiapkan tautan YouTube ke MP4 dan YouTube ke MP3 di ponsel atau desktop.",
+      "keywords": ["pengunduh youtube", "download video youtube", "youtube ke mp4", "youtube ke mp3", "konverter youtube gratis"],
+      "h1": "Pengunduh YouTube",
+      "intro": "Tempel tautan YouTube, pilih MP4 atau MP3, lalu siapkan tautan unduhan.",
+      "faq": [
+        ["Apakah gratis?", "Ya. VagaTools menyediakan antarmuka gratis untuk penggunaan yang diizinkan."],
+        ["Apakah bisa di ponsel?", "Ya. Halaman ini responsif."],
+        ["Bisakah mengunduh video apa saja?", "Gunakan hanya untuk video milik Anda atau yang diizinkan untuk diunduh."]
+      ]
+    },
+    {
+      "code": "hi",
+      "name": "हिन्दी",
+      "title": "YouTube वीडियो डाउनलोडर - YouTube से MP4 और MP3",
+      "description": "मोबाइल या डेस्कटॉप पर YouTube से MP4 और YouTube से MP3 लिंक तैयार करने के लिए मुफ्त YouTube डाउनलोडर।",
+      "keywords": ["youtube video downloader", "youtube video download", "youtube to mp4", "youtube to mp3", "free youtube converter"],
+      "h1": "YouTube वीडियो डाउनलोडर",
+      "intro": "YouTube लिंक पेस्ट करें, MP4 या MP3 चुनें और डाउनलोड लिंक तैयार करें।",
+      "faq": [
+        ["क्या यह मुफ्त है?", "हाँ। VagaTools अनुमति प्राप्त उपयोग के लिए मुफ्त इंटरफेस देता है।"],
+        ["क्या यह मोबाइल पर चलता है?", "हाँ। पेज responsive है।"],
+        ["क्या कोई भी वीडियो डाउनलोड कर सकता हूँ?", "केवल अपने या अनुमति प्राप्त वीडियो के लिए उपयोग करें।"]
+      ]
+    },
+    {
+      "code": "ja",
+      "name": "日本語",
+      "title": "YouTube ダウンローダー - YouTube を MP4 / MP3 に",
+      "description": "YouTube から MP4、YouTube から MP3 のリンクを準備する無料オンラインツール。",
+      "keywords": ["youtube ダウンローダー", "youtube 動画 ダウンロード", "youtube mp4", "youtube mp3", "youtube 変換"],
+      "h1": "YouTube ダウンローダー",
+      "intro": "YouTube リンクを貼り付け、MP4 または MP3 を選んでダウンロードリンクを準備します。",
+      "faq": [
+        ["無料ですか？", "はい。許可された用途向けの無料インターフェースです。"],
+        ["スマホで使えますか？", "はい。レスポンシブ対応です。"],
+        ["どの動画でも使えますか？", "所有または許可された動画にのみ使用してください。"]
+      ]
+    },
+    {
+      "code": "ko",
+      "name": "한국어",
+      "title": "YouTube 다운로더 - YouTube를 MP4 및 MP3로",
+      "description": "YouTube를 MP4 또는 MP3로 준비하는 무료 온라인 YouTube 다운로더.",
+      "keywords": ["유튜브 다운로더", "유튜브 동영상 다운로드", "youtube mp4", "youtube mp3", "무료 유튜브 변환기"],
+      "h1": "YouTube 다운로더",
+      "intro": "YouTube 링크를 붙여넣고 MP4 또는 MP3를 선택해 다운로드 링크를 준비하세요.",
+      "faq": [
+        ["무료인가요?", "예. 허용된 사용을 위한 무료 인터페이스입니다."],
+        ["모바일에서 되나요?", "예. 반응형 페이지입니다."],
+        ["아무 영상이나 다운로드할 수 있나요?", "소유했거나 허가받은 영상에만 사용하세요."]
+      ]
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "title": "YouTube İndirici - YouTube MP4 ve MP3",
+      "description": "YouTube MP4 ve YouTube MP3 bağlantıları hazırlamak için ücretsiz YouTube indirici.",
+      "keywords": ["youtube indirici", "youtube video indir", "youtube mp4", "youtube mp3", "ücretsiz youtube dönüştürücü"],
+      "h1": "YouTube İndirici",
+      "intro": "YouTube bağlantısını yapıştırın, MP4 veya MP3 seçin ve indirme bağlantısı hazırlayın.",
+      "faq": [
+        ["Ücretsiz mi?", "Evet. VagaTools izinli kullanımlar için ücretsiz bir arayüz sunar."],
+        ["Mobilde çalışır mı?", "Evet. Sayfa responsive tasarlanmıştır."],
+        ["Her videoyu indirebilir miyim?", "Yalnızca sahip olduğunuz veya izin verilen videolar için kullanın."]
+      ]
+    },
+    {
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "title": "Trình tải YouTube - YouTube sang MP4 và MP3",
+      "description": "Trình tải YouTube miễn phí để chuẩn bị liên kết YouTube sang MP4 và YouTube sang MP3.",
+      "keywords": ["trình tải youtube", "tải video youtube", "youtube sang mp4", "youtube sang mp3", "chuyển đổi youtube miễn phí"],
+      "h1": "Trình tải YouTube",
+      "intro": "Dán liên kết YouTube, chọn MP4 hoặc MP3 và chuẩn bị liên kết tải xuống.",
+      "faq": [
+        ["Có miễn phí không?", "Có. VagaTools cung cấp giao diện miễn phí cho mục đích được phép."],
+        ["Có dùng trên điện thoại không?", "Có. Trang hỗ trợ responsive."],
+        ["Có thể tải mọi video không?", "Chỉ dùng với video bạn sở hữu hoặc được phép tải xuống."]
+      ]
+    },
+    {
+      "code": "ar",
+      "name": "العربية",
+      "title": "تنزيل YouTube - تحويل YouTube إلى MP4 و MP3",
+      "description": "أداة مجانية لتحضير روابط تنزيل YouTube إلى MP4 و YouTube إلى MP3 على الهاتف أو سطح المكتب.",
+      "keywords": ["تنزيل يوتيوب", "تحميل فيديو يوتيوب", "youtube mp4", "youtube mp3", "محول يوتيوب مجاني"],
+      "h1": "تنزيل YouTube",
+      "intro": "الصق رابط YouTube واختر MP4 أو MP3 لتحضير رابط التنزيل.",
+      "faq": [
+        ["هل الأداة مجانية؟", "نعم. VagaTools يوفر واجهة مجانية للاستخدامات المسموح بها."],
+        ["هل تعمل على الهاتف؟", "نعم. الصفحة متجاوبة."],
+        ["هل يمكن تنزيل أي فيديو؟", "استخدمها فقط للفيديوهات التي تملكها أو لديك إذن لتنزيلها."]
+      ]
+    },
+    {
+      "code": "ru",
+      "name": "Русский",
+      "title": "Загрузчик YouTube - YouTube в MP4 и MP3",
+      "description": "Бесплатный загрузчик YouTube для подготовки ссылок YouTube в MP4 и YouTube в MP3.",
+      "keywords": ["скачать youtube", "скачать видео youtube", "youtube в mp4", "youtube в mp3", "конвертер youtube"],
+      "h1": "Загрузчик YouTube",
+      "intro": "Вставьте ссылку YouTube, выберите MP4 или MP3 и подготовьте ссылку для скачивания.",
+      "faq": [
+        ["Это бесплатно?", "Да. VagaTools предоставляет бесплатный интерфейс для разрешенного использования."],
+        ["Работает на телефоне?", "Да. Страница адаптивная."],
+        ["Можно скачать любое видео?", "Используйте только для своих видео или видео с разрешением на скачивание."]
+      ]
+    }
+  ]
+}

@@ -1,9 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://your-domain.example/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/en/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/zh/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/es/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/fr/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/de/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/pt/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/id/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/hi/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/ja/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/ko/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/tr/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/vi/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/ar/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
+  </url>
+  <url>
+    <loc>https://your-domain.example/ru/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://your-domain.example/en/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://your-domain.example/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://your-domain.example/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://your-domain.example/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://your-domain.example/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://your-domain.example/pt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://your-domain.example/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://your-domain.example/hi/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://your-domain.example/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://your-domain.example/ko/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://your-domain.example/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://your-domain.example/vi/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://your-domain.example/ar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://your-domain.example/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://your-domain.example/" />
   </url>
 </urlset>

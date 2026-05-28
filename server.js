@@ -139,7 +139,9 @@ async function handleDownload(req, res, url) {
 
 function serveStatic(req, res, url) {
   const pathname = decodeURIComponent(url.pathname);
-  const filePath = path.join(root, pathname === "/" ? "index.html" : pathname);
+  const cleanPath = pathname.replace(/^\/+/, "");
+  const relativePath = pathname === "/" || pathname.endsWith("/") ? path.join(cleanPath, "index.html") : cleanPath;
+  const filePath = path.join(root, relativePath);
   const rootWithSep = root.endsWith(path.sep) ? root : root + path.sep;
 
   if (!filePath.startsWith(rootWithSep)) {

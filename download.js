@@ -1,10 +1,43 @@
 const params = new URLSearchParams(window.location.search);
-const id = (params.get("id") || "").trim();
+const rawUrl = (params.get("url") || "").trim();
+const rawId = (params.get("id") || "").trim();
 const format = (params.get("format") || "MP4").trim().toUpperCase();
+const id = rawId || parseYouTubeId(rawUrl);
 const validId = /^[a-zA-Z0-9_-]{6,20}$/.test(id);
 const safeFormat = ["MP4", "MP3", "WEBM"].includes(format) ? format : "MP4";
 const metaApiBase = document.querySelector('meta[name="vagatools-api-base"]')?.content || "";
 const apiBase = (metaApiBase || window.VAGATOOLS_CONFIG?.API_BASE || "").replace(/\/$/, "");
+
+function parseYouTubeId(value) {
+  if (!value) {
+    return "";
+  }
+
+  try {
+    const url = new URL(value);
+    const host = url.hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, "");
+
+    if (host === "youtu.be") {
+      return url.pathname.split("/").filter(Boolean)[0] || "";
+    }
+
+    if (host === "youtube.com" || host === "music.youtube.com" || host === "youtube-nocookie.com") {
+      const parts = url.pathname.split("/").filter(Boolean);
+
+      if (url.pathname === "/watch") {
+        return url.searchParams.get("v") || "";
+      }
+
+      if (["shorts", "embed", "live", "v"].includes(parts[0])) {
+        return parts[1] || "";
+      }
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
 
 const videoId = document.querySelector("#downloadVideoId");
 const videoFormat = document.querySelector("#downloadFormat");

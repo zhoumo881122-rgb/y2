@@ -1,0 +1,8 @@
+{
+  "name": "VagaTools",
+  "short_name": "VagaTools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7faf9",
+  "theme_color": "#0f766e"
+}
