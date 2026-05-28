@@ -148,6 +148,16 @@
             </label>
           </div>
           <p class="status" id="status" role="status" aria-live="polite"></p>
+          <div class="video-result" id="videoResult" hidden>
+            <img id="videoThumb" src="" alt="" loading="lazy">
+            <div>
+              <h2 id="resultTitle" data-i18n="resultTitle">YouTube video parsed</h2>
+              <p><strong data-i18n="resultIdLabel">Video ID:</strong> <span id="videoId"></span></p>
+              <p><strong data-i18n="resultFormatLabel">Format:</strong> <span id="videoFormat"></span></p>
+              <a id="videoOpenLink" href="#" target="_blank" rel="noopener" data-i18n="resultOpenLabel">Open original YouTube link</a>
+              <p class="result-note" data-i18n="resultHint">Frontend parsing is ready. Connect a compliant backend API to fetch available formats and create download links.</p>
+            </div>
+          </div>
         </form>
 
         <div class="ad-slot" aria-label="Advertisement" data-i18n-aria="adAria">
@@ -237,6 +247,6 @@
       </nav>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=20260528-parser" defer></script>
   </body>
 </html>

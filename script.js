@@ -3,6 +3,11 @@ const input = document.querySelector("#videoUrl");
 const status = document.querySelector("#status");
 const year = document.querySelector("#year");
 const languageSelect = document.querySelector("#languageSelect");
+const videoResult = document.querySelector("#videoResult");
+const videoThumb = document.querySelector("#videoThumb");
+const videoId = document.querySelector("#videoId");
+const videoFormat = document.querySelector("#videoFormat");
+const videoOpenLink = document.querySelector("#videoOpenLink");
 
 const translations = {
   en: {
@@ -60,7 +65,13 @@ const translations = {
     footerHome: "Home",
     footerContact: "Contact",
     success: "Ready to process {format}. Connect this form to your converter API when the backend is available.",
-    error: "Please paste a valid video URL that starts with http or https."
+    error: "Please paste a valid video URL that starts with http or https.",
+    parseError: "This link could not be parsed. Please paste a valid YouTube watch, Shorts, embed, or youtu.be link.",
+    resultTitle: "YouTube video parsed",
+    resultIdLabel: "Video ID:",
+    resultFormatLabel: "Format:",
+    resultOpenLabel: "Open original YouTube link",
+    resultHint: "Frontend parsing is ready. Connect a compliant backend API to fetch available formats and create download links."
   },
   zh: {
     title: "YouTube 视频下载器 - YouTube 下载视频 MP4/MP3 在线工具 | VagaTools",
@@ -117,7 +128,13 @@ const translations = {
     footerHome: "首页",
     footerContact: "联系",
     success: "已准备处理 {format}。后端接口完成后，可把这个表单接入转换 API。",
-    error: "请粘贴以 http 或 https 开头的有效视频链接。"
+    error: "请粘贴以 http 或 https 开头的有效视频链接。",
+    parseError: "无法解析这个链接。请粘贴有效的 YouTube watch、Shorts、embed 或 youtu.be 链接。",
+    resultTitle: "YouTube 视频解析成功",
+    resultIdLabel: "视频 ID：",
+    resultFormatLabel: "格式：",
+    resultOpenLabel: "打开原始 YouTube 链接",
+    resultHint: "前端解析已完成。要生成真实下载链接，需要接入合规的后端解析和转码 API。"
   },
   ja: {
     title: "VagaTools 動画ダウンローダー - 無料オンライン変換",
@@ -431,6 +448,54 @@ function applyLanguage(language) {
   });
 }
 
+function parseYouTubeUrl(value) {
+  const url = new URL(value);
+  const host = url.hostname.toLowerCase().replace(/^www\./, "").replace(/^m\./, "");
+  let id = "";
+
+  if (host === "youtu.be") {
+    id = url.pathname.split("/").filter(Boolean)[0] || "";
+  }
+
+  if (host === "youtube.com" || host === "music.youtube.com" || host === "youtube-nocookie.com") {
+    const parts = url.pathname.split("/").filter(Boolean);
+
+    if (url.pathname === "/watch") {
+      id = url.searchParams.get("v") || "";
+    } else if (["shorts", "embed", "live", "v"].includes(parts[0])) {
+      id = parts[1] || "";
+    }
+  }
+
+  id = id.trim();
+  if (!/^[a-zA-Z0-9_-]{6,20}$/.test(id)) {
+    throw new Error("Invalid YouTube video id");
+  }
+
+  return {
+    id,
+    watchUrl: `https://www.youtube.com/watch?v=${id}`,
+    thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+  };
+}
+
+function showParsedVideo(video, selectedFormat) {
+  videoId.textContent = video.id;
+  videoFormat.textContent = selectedFormat;
+  videoOpenLink.href = video.watchUrl;
+  videoThumb.src = video.thumbnail;
+  videoThumb.alt = `${t("resultTitle")} ${video.id}`;
+  videoResult.hidden = false;
+}
+
+function hideParsedVideo() {
+  videoResult.hidden = true;
+  videoThumb.removeAttribute("src");
+  videoOpenLink.href = "#";
+}
+
+window.vagaToolsParseYouTubeUrl = parseYouTubeUrl;
+
 let currentLanguage = normalizeLanguage(localStorage.getItem("preferredLanguage") || detectLanguage());
 const savedLanguage = localStorage.getItem("preferredLanguage");
 languageSelect.value = savedLanguage && supportedLanguages.includes(savedLanguage) ? savedLanguage : "auto";
@@ -447,21 +512,36 @@ languageSelect.addEventListener("change", () => {
   applyLanguage(languageSelect.value);
 });
 
+function processVideoUrl(value, selectedFormat, shouldFocus = true) {
+  try {
+    const parsedUrl = new URL(value);
+    if (!["http:", "https:"].includes(parsedUrl.protocol)) {
+      throw new Error("Unsupported protocol");
+    }
+
+    const video = parseYouTubeUrl(value);
+    showParsedVideo(video, selectedFormat);
+    status.textContent = t("success").replace("{format}", selectedFormat);
+  } catch {
+    hideParsedVideo();
+    status.textContent = value.startsWith("http") ? t("parseError") : t("error");
+    if (shouldFocus) {
+      input.focus();
+    }
+  }
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const selectedFormat = new FormData(form).get("format");
   const value = input.value.trim();
 
-  try {
-    const url = new URL(value);
-    if (!["http:", "https:"].includes(url.protocol)) {
-      throw new Error("Unsupported protocol");
-    }
-
-    status.textContent = t("success").replace("{format}", selectedFormat);
-  } catch {
-    status.textContent = t("error");
-    input.focus();
-  }
+  processVideoUrl(value, selectedFormat);
 });
+
+const initialUrl = new URLSearchParams(window.location.search).get("url");
+if (initialUrl) {
+  input.value = initialUrl;
+  processVideoUrl(initialUrl, new FormData(form).get("format"), false);
+}

@@ -235,6 +235,51 @@ button:hover {
   font-weight: 700;
 }
 
+.video-result {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f9fcfb;
+}
+
+.video-result[hidden] {
+  display: none;
+}
+
+.video-result img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: var(--soft);
+  object-fit: cover;
+}
+
+.video-result h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.video-result p {
+  margin-bottom: 7px;
+}
+
+.video-result a {
+  color: var(--brand-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.result-note {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .ad-slot {
   max-width: 900px;
   min-height: 96px;
@@ -407,6 +452,10 @@ details p {
 
   .converter {
     padding: 16px;
+  }
+
+  .video-result {
+    grid-template-columns: 1fr;
   }
 
   .url-row button {
