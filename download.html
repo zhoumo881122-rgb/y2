@@ -7,6 +7,8 @@
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Generated VagaTools download link page for a parsed YouTube video.">
     <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943771829287979"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="site-header">
@@ -24,7 +26,7 @@
         <div class="tool-copy">
           <p class="eyebrow">Generated download link</p>
           <h1>Download Link</h1>
-          <p class="intro">This page receives the parsed YouTube video ID and selected format. Connect your backend API here to return the final file URL.</p>
+          <p class="intro">This page receives the parsed YouTube video ID and selected format. The backend API returns the final temporary file URL when yt-dlp is installed on the server.</p>
         </div>
 
         <div class="converter download-panel">
@@ -35,12 +37,19 @@
               <p><strong>Video ID:</strong> <span id="downloadVideoId"></span></p>
               <p><strong>Format:</strong> <span id="downloadFormat"></span></p>
               <div class="result-actions">
-                <a class="download-link" id="backendLink" href="#">Backend download endpoint</a>
+                <button class="download-link action-button" id="backendLink" type="button">Get download file</button>
+                <a class="download-link" id="directDownloadLink" href="#" target="_blank" rel="noopener" hidden>Open parsed download link</a>
                 <a id="originalLink" href="#" target="_blank" rel="noopener">Open original YouTube link</a>
               </div>
-              <p class="result-note">Replace this placeholder route with your compliant download API, for example <code>/api/download?id=VIDEO_ID&amp;format=MP4</code>.</p>
+              <p class="status" id="downloadStatus" role="status" aria-live="polite"></p>
+              <p class="result-note">The button calls <code>/api/download?id=VIDEO_ID&amp;format=MP4&amp;mode=json</code>. Use only for videos you own or have permission to download.</p>
             </div>
           </div>
+        </div>
+
+        <div class="ad-slot" aria-label="Advertisement">
+          <span>Advertisement</span>
+          <!-- Add your AdSense ad unit <ins class="adsbygoogle"> code here after creating an ad slot. -->
         </div>
       </section>
     </main>

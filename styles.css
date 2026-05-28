@@ -274,9 +274,11 @@ button:hover {
   margin: 11px 0 8px;
 }
 
-.video-result a {
+.video-result a,
+.video-result .action-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 40px;
   padding: 0 12px;
   border: 1px solid var(--line);
@@ -287,7 +289,8 @@ button:hover {
   text-decoration: none;
 }
 
-.video-result a:hover {
+.video-result a:hover,
+.video-result .action-button:hover {
   border-color: var(--brand);
   background: var(--soft);
 }
@@ -301,6 +304,16 @@ button:hover {
 .video-result .download-link:hover {
   background: var(--brand-dark);
   color: #fff;
+}
+
+.video-result .action-button {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.video-result .action-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .result-note {
