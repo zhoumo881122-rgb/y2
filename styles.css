@@ -267,17 +267,57 @@ button:hover {
   margin-bottom: 7px;
 }
 
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 11px 0 8px;
+}
+
 .video-result a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
   color: var(--brand-dark);
   font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
+}
+
+.video-result a:hover {
+  border-color: var(--brand);
+  background: var(--soft);
+}
+
+.video-result .download-link {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.video-result .download-link:hover {
+  background: var(--brand-dark);
+  color: #fff;
 }
 
 .result-note {
   margin-top: 9px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.result-note code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: var(--soft);
+  color: var(--brand-dark);
+}
+
+.download-panel {
+  max-width: 900px;
 }
 
 .ad-slot {

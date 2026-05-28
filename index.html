@@ -154,7 +154,10 @@
               <h2 id="resultTitle" data-i18n="resultTitle">YouTube video parsed</h2>
               <p><strong data-i18n="resultIdLabel">Video ID:</strong> <span id="videoId"></span></p>
               <p><strong data-i18n="resultFormatLabel">Format:</strong> <span id="videoFormat"></span></p>
-              <a id="videoOpenLink" href="#" target="_blank" rel="noopener" data-i18n="resultOpenLabel">Open original YouTube link</a>
+              <div class="result-actions">
+                <a class="download-link" id="videoDownloadLink" href="#" data-i18n="resultDownloadLabel">Get download link</a>
+                <a id="videoOpenLink" href="#" target="_blank" rel="noopener" data-i18n="resultOpenLabel">Open original YouTube link</a>
+              </div>
               <p class="result-note" data-i18n="resultHint">Frontend parsing is ready. Connect a compliant backend API to fetch available formats and create download links.</p>
             </div>
           </div>
@@ -247,6 +250,6 @@
       </nav>
     </footer>
 
-    <script src="script.js?v=20260528-parser" defer></script>
+    <script src="script.js?v=20260528-download-link" defer></script>
   </body>
 </html>

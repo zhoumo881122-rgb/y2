@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Link - VagaTools YouTube Downloader</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Generated VagaTools download link page for a parsed YouTube video.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="VagaTools home">
+        <span class="brand-mark">V</span>
+        <span>VagaTools</span>
+      </a>
+      <nav class="top-nav" aria-label="Download navigation">
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tool-section">
+        <div class="tool-copy">
+          <p class="eyebrow">Generated download link</p>
+          <h1>Download Link</h1>
+          <p class="intro">This page receives the parsed YouTube video ID and selected format. Connect your backend API here to return the final file URL.</p>
+        </div>
+
+        <div class="converter download-panel">
+          <div class="video-result" id="downloadResult">
+            <img id="downloadThumb" src="" alt="" loading="lazy">
+            <div>
+              <h2>Ready for backend processing</h2>
+              <p><strong>Video ID:</strong> <span id="downloadVideoId"></span></p>
+              <p><strong>Format:</strong> <span id="downloadFormat"></span></p>
+              <div class="result-actions">
+                <a class="download-link" id="backendLink" href="#">Backend download endpoint</a>
+                <a id="originalLink" href="#" target="_blank" rel="noopener">Open original YouTube link</a>
+              </div>
+              <p class="result-note">Replace this placeholder route with your compliant download API, for example <code>/api/download?id=VIDEO_ID&amp;format=MP4</code>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="download.js?v=20260528-download-link" defer></script>
+  </body>
+</html>

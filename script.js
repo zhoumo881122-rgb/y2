@@ -8,6 +8,7 @@ const videoThumb = document.querySelector("#videoThumb");
 const videoId = document.querySelector("#videoId");
 const videoFormat = document.querySelector("#videoFormat");
 const videoOpenLink = document.querySelector("#videoOpenLink");
+const videoDownloadLink = document.querySelector("#videoDownloadLink");
 
 const translations = {
   en: {
@@ -70,8 +71,9 @@ const translations = {
     resultTitle: "YouTube video parsed",
     resultIdLabel: "Video ID:",
     resultFormatLabel: "Format:",
+    resultDownloadLabel: "Get download link",
     resultOpenLabel: "Open original YouTube link",
-    resultHint: "Frontend parsing is ready. Connect a compliant backend API to fetch available formats and create download links."
+    resultHint: "Frontend parsing is ready. Use the new download link as the route for your compliant backend API."
   },
   zh: {
     title: "YouTube 视频下载器 - YouTube 下载视频 MP4/MP3 在线工具 | VagaTools",
@@ -133,8 +135,9 @@ const translations = {
     resultTitle: "YouTube 视频解析成功",
     resultIdLabel: "视频 ID：",
     resultFormatLabel: "格式：",
+    resultDownloadLabel: "获取下载链接",
     resultOpenLabel: "打开原始 YouTube 链接",
-    resultHint: "前端解析已完成。要生成真实下载链接，需要接入合规的后端解析和转码 API。"
+    resultHint: "前端解析已完成。新的下载链接可作为合规后端 API 的入口。"
   },
   ja: {
     title: "VagaTools 動画ダウンローダー - 無料オンライン変換",
@@ -480,9 +483,12 @@ function parseYouTubeUrl(value) {
 }
 
 function showParsedVideo(video, selectedFormat) {
+  const downloadUrl = `download.html?id=${encodeURIComponent(video.id)}&format=${encodeURIComponent(selectedFormat)}`;
+
   videoId.textContent = video.id;
   videoFormat.textContent = selectedFormat;
   videoOpenLink.href = video.watchUrl;
+  videoDownloadLink.href = downloadUrl;
   videoThumb.src = video.thumbnail;
   videoThumb.alt = `${t("resultTitle")} ${video.id}`;
   videoResult.hidden = false;
@@ -492,6 +498,7 @@ function hideParsedVideo() {
   videoResult.hidden = true;
   videoThumb.removeAttribute("src");
   videoOpenLink.href = "#";
+  videoDownloadLink.href = "#";
 }
 
 window.vagaToolsParseYouTubeUrl = parseYouTubeUrl;
