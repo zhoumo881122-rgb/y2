@@ -25,7 +25,10 @@ const mimeTypes = {
 function sendJson(res, status, data) {
   res.writeHead(status, {
     "Content-Type": "application/json; charset=utf-8",
-    "Cache-Control": "no-store"
+    "Cache-Control": "no-store",
+    "Access-Control-Allow-Origin": process.env.ALLOWED_ORIGIN || "*",
+    "Access-Control-Allow-Methods": "GET, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type"
   });
   res.end(JSON.stringify(data));
 }
@@ -162,6 +165,16 @@ function serveStatic(req, res, url) {
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
+
+  if (req.method === "OPTIONS") {
+    res.writeHead(204, {
+      "Access-Control-Allow-Origin": process.env.ALLOWED_ORIGIN || "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
+    });
+    res.end();
+    return;
+  }
 
   if (url.pathname === "/api/download") {
     handleDownload(req, res, url);

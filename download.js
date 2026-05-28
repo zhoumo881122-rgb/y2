@@ -3,6 +3,8 @@ const id = (params.get("id") || "").trim();
 const format = (params.get("format") || "MP4").trim().toUpperCase();
 const validId = /^[a-zA-Z0-9_-]{6,20}$/.test(id);
 const safeFormat = ["MP4", "MP3", "WEBM"].includes(format) ? format : "MP4";
+const metaApiBase = document.querySelector('meta[name="vagatools-api-base"]')?.content || "";
+const apiBase = (metaApiBase || window.VAGATOOLS_CONFIG?.API_BASE || "").replace(/\/$/, "");
 
 const videoId = document.querySelector("#downloadVideoId");
 const videoFormat = document.querySelector("#downloadFormat");
@@ -14,7 +16,7 @@ const downloadStatus = document.querySelector("#downloadStatus");
 
 if (validId) {
   const watchUrl = `https://www.youtube.com/watch?v=${id}`;
-  const apiUrl = `/api/download?id=${encodeURIComponent(id)}&format=${encodeURIComponent(safeFormat)}`;
+  const apiUrl = `${apiBase}/api/download?id=${encodeURIComponent(id)}&format=${encodeURIComponent(safeFormat)}`;
   const jsonApiUrl = `${apiUrl}&mode=json`;
 
   videoId.textContent = id;
@@ -33,7 +35,7 @@ if (validId) {
       const responseText = await response.text();
 
       if (!contentType.includes("application/json")) {
-        throw new Error(`API returned ${contentType || "non-JSON"} instead of JSON. Start this site with node server.js, not a static file server.`);
+        throw new Error(`API returned ${contentType || "non-JSON"} instead of JSON. GitHub Pages cannot run the parser. Set API_BASE in config.js to your deployed backend URL.`);
       }
 
       const data = JSON.parse(responseText);
