@@ -29,7 +29,14 @@ if (validId) {
 
     try {
       const response = await fetch(jsonApiUrl, { cache: "no-store" });
-      const data = await response.json();
+      const contentType = response.headers.get("content-type") || "";
+      const responseText = await response.text();
+
+      if (!contentType.includes("application/json")) {
+        throw new Error(`API returned ${contentType || "non-JSON"} instead of JSON. Start this site with node server.js, not a static file server.`);
+      }
+
+      const data = JSON.parse(responseText);
 
       if (!response.ok || !data.ok || !data.url) {
         throw new Error(data.detail || data.error || "Parser failed.");
@@ -40,7 +47,7 @@ if (validId) {
       downloadStatus.textContent = "Download link parsed. Click the new download link before it expires.";
       backendLink.disabled = false;
     } catch (error) {
-      downloadStatus.textContent = `Parser unavailable: ${error.message}. Deploy with server.js and install yt-dlp, then this button will return the real temporary YouTube file URL.`;
+      downloadStatus.textContent = `Parser unavailable: ${error.message}`;
       backendLink.disabled = false;
     }
   });
